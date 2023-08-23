@@ -11,4 +11,16 @@ html {
 body {
   font-size: 1.6rem;
   line-height: 1.6;
+  font-family: "Roboto-Regular";
 }
+
+/* 
+Reset Styles
+*/
+a {
+  text-decoration: none;
+}
+
+/* Helper Class */
+
+/* App Styles */
