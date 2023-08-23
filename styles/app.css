@@ -1,6 +1,8 @@
 :root {
   --orange: #e76f51;
   --white: #fff;
+  --grey: #d2d2d2;
+  --dark: #3b3735;
 }
 
 html {
@@ -37,20 +39,24 @@ a {
   background-size: cover;
   min-height: 55rem;
   border-radius: 0 0 10rem 10rem;
-  
 }
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
+  padding: 2.5rem 0;
+}
+.nav__wrapper {
+  display: flex;
+  align-items: center;
 }
 .app-logo {
   display: block;
   width: 5.5rem;
   height: 5.5rem;
+  margin-right: 4rem;
 }
-.app-logo__omg {
+.app-logo__img {
   width: 100%;
   height: 100%;
 }
@@ -58,13 +64,37 @@ a {
   display: none;
 }
 .menu__item {
+  margin-right: 1.5rem;
 }
 .menu__link {
+  color: var(--grey);
+  transition: all 0.2s ease-in-out;
+}
+.menu__link:hover {
   color: var(--white);
+}
+.menu__link--active {
+  color: var(--white);
+  position: relative;
+  z-index: 1;
+}
+.menu__link--active::after {
+  content: "";
+  position: absolute;
+  width: 3rem;
+  height: 0.3rem;
+  border-radius: 2rem;
+  background-color: var(--orange);
+  left: 0rem;
+  top: 1rem;
+  right: 0;
+  margin: 0 auto;
+  transform: rotate(-45deg);
+  z-index: -1;
 }
 .nav-menu {
   position: fixed;
-  background-color: rgb(97, 97, 93);
+  background-color: var(--orange);
   top: 0;
   bottom: 0;
   left: -20rem;
@@ -103,8 +133,19 @@ a {
   display: none;
 }
 .header__link {
+  color: var(--white);
+  font-family: "Roboto Medium";
+  margin-left: 1.5rem;
 }
 .header__link--border {
+  border: 1px solid var(--white);
+  padding: 1rem 2.5rem;
+  border-radius: 9rem;
+  transition: all 0.2s ease-in-out;
+}
+.header__link--border:hover {
+  background-color: var(--white);
+  color: var(--dark);
 }
 .nav__btn {
   background-color: var(--white);
