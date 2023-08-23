@@ -1,12 +1,12 @@
 @font-face {
     font-family: "Archivo";
-    src: url(./../public/fonts/Archivo/Archivo-Black.ttf);
+    src: url(./../public/fonts/Archivo/Archivo-Black.ttf) format("truetype");
 }
 @font-face {
     font-family: "Roboto-Medium";
-    src: url(./../public/fonts/Roboto/Roboto-Medium.ttf);
+    src: url(./../public/fonts/Roboto/Roboto-Medium.ttf) format("truetype");
 }
 @font-face {
     font-family: "Roboto-Regular";
-    src: url(./../public/fonts/Roboto/Roboto-Regular.ttf);
+    src: url(./../public/fonts/Roboto/Roboto-Regular.ttf) format("truetype");
 }
