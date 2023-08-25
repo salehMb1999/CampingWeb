@@ -7,7 +7,7 @@ This project is a sample exercise that I've created based on a training course, 
 
 I appreciate your attention and interest.
 
-Best regards.
+Best regards.to see the project: https://salehmb1999.github.io/CampingWeb/
 
 Link of the COURSE: https://sabzlearn.ir/product/advance-template-design-with-html-css-flexbox/
 
