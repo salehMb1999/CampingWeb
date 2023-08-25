@@ -28,7 +28,22 @@ a {
   text-decoration: none;
 }
 
-/* Helper Class */
+/* Component */
+
+.btn {
+  display: block;
+  border-radius: 10rem;
+  color: var(--white);
+  background-color: var(--dark);
+  width: 18rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Roboto Medium";
+}
 
 /* App Styles */
 
@@ -37,7 +52,7 @@ a {
     url("./../public/images/header-bg.jpg");
   background-position: center;
   background-size: cover;
-  min-height: 55rem;
+  min-height: 85vh;
   border-radius: 0 0 10rem 10rem;
 }
 .nav {
@@ -129,21 +144,21 @@ a {
 }
 .nav-menu__link--border {
 }
-.header__links {
+.nav__links {
   display: none;
 }
-.header__link {
+.nav__link {
   color: var(--white);
   font-family: "Roboto Medium";
   margin-left: 1.5rem;
 }
-.header__link--border {
+.nav__link--border {
   border: 1px solid var(--white);
   padding: 1rem 2.5rem;
   border-radius: 9rem;
   transition: all 0.2s ease-in-out;
 }
-.header__link--border:hover {
+.nav__link--border:hover {
   background-color: var(--white);
   color: var(--dark);
 }
@@ -193,4 +208,29 @@ a {
 .nav__btn--open .nav__btn-line::after {
   top: 0;
   transform: rotate(-45deg);
+}
+
+.header-content {
+  text-align: center;
+  color: var(--white);
+  margin-top: 6rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.header-content__title {
+  font-family: "Archivo Black";
+  font-size: 5rem;
+  line-height: 1.2;
+  margin-bottom: 3rem;
+  max-width: 35rem;
+}
+.header-content__caption {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  max-width: 34rem;
+}
+.header-content__link {
+  background-color: var(--orange);
 }

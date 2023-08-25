@@ -13,8 +13,11 @@
     
 }
 @media screen and (min-width: 992px) {
-    .header__links {
+    .nav__links {
         display: block;
+    }
+    .header-content__caption {
+        max-width: 50rem;
     }
 }
 @media screen and (min-width: 1200px) {
