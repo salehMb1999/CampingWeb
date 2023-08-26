@@ -3,6 +3,7 @@
   --white: #fff;
   --grey: #d2d2d2;
   --dark: #3b3735;
+  --pink: #faf4f2;
 }
 
 html {
@@ -19,6 +20,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.6;
   font-family: "Roboto-Regular";
+  background-color: var(--pink);
 }
 
 /* 
@@ -109,7 +111,7 @@ a {
 }
 .nav-menu {
   position: fixed;
-  background-color: var(--orange);
+  background-color: var(--dark);
   top: 0;
   bottom: 0;
   left: -20rem;
@@ -128,6 +130,27 @@ a {
 }
 .mobile-menu__link {
   color: var(--white);
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+.mobile-menu__link::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0.3rem;
+  background-color: var(--orange);
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transition: all 0.2s ease-in-out;
+  border-radius: 10rem;
+}
+.mobile-menu__link:hover::before {
+  width: 1.6rem;
+}
+.mobile-menu__link:hover {
+  padding-left: 1.8rem;
 }
 .nav-menu__links {
   display: flex;
@@ -142,8 +165,7 @@ a {
   flex-grow: 1;
   text-align: center;
 }
-.nav-menu__link--border {
-}
+
 .nav__links {
   display: none;
 }
@@ -233,4 +255,46 @@ a {
 }
 .header-content__link {
   background-color: var(--orange);
+}
+
+/* Main */
+.main {
+}
+/* Services */
+
+.services {
+  margin-top: -20rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service {
+  background-color: var(--white);
+  width: 30rem;
+  height: 26rem;
+  border-radius: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 0 4rem;
+  color: var(--dark);
+  flex-grow: 1;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.service__img {
+  display: block;
+}
+
+.service__title {
+  font-family: "Archivo";
+  font-size: 1.8rem;
+  margin: 1.5rem 0 0.8rem 0;
+}
+
+.service__caption {
 }
