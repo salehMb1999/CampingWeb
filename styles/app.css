@@ -306,25 +306,27 @@ a {
   padding: 6rem 0;
   color: var(--dark);
   position: relative;
+  overflow-x: hidden;
+
 }
 .destinations::after,
 .destinations::before {
   content: "";
   position: absolute;
-  width: 60rem;
-  height: 60rem;
+  width: 40rem;
+  height: 40rem;
   background-size: contain;
   background-repeat: no-repeat;
   z-index: -1;
 }
 .destinations::before {
   background-image: url("./../public/svgs/shape2.svg");
-  left: -45rem;
+  left: -20rem;
   bottom: 40rem;
 }
 .destinations::after {
   background-image: url("./../public/svgs/shape1.svg");
-  right: -45rem;
+  right: -20rem;
   top: -10rem;
 }
 .destinations__logo {

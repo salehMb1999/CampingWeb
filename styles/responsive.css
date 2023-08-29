@@ -21,6 +21,10 @@
 }
 
 @media screen and (min-width: 576px) {
+  .destinations {
+  overflow-x: visible;
+
+  }
 }
 @media screen and (min-width: 768px) {
   .nav__btn {
