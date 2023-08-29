@@ -307,7 +307,6 @@ a {
   color: var(--dark);
   position: relative;
   overflow-x: hidden;
-
 }
 .destinations::after,
 .destinations::before {
@@ -507,7 +506,7 @@ a {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  box-shadow: 0 0 1rem var(--orange)
+  box-shadow: 0 0 1rem var(--orange);
 }
 
 .newsletter__img {
