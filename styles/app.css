@@ -23,6 +23,7 @@ body {
   line-height: 1.6;
   font-family: "Roboto-Regular";
   background-color: var(--pink);
+  overflow-x: hidden;
 }
 
 /* 
@@ -120,6 +121,7 @@ a {
   width: 20rem;
   padding: 2.5rem;
   transition: all 250ms ease-in-out;
+  z-index: 99;
 }
 .nav-menu--open {
   left: 0rem;
@@ -264,7 +266,7 @@ a {
 /* Services */
 
 .services {
-  margin-top: -12rem;
+  margin-top: -10rem;
   display: flex;
   flex-wrap: wrap;
   margin-left: -1rem;
@@ -303,6 +305,27 @@ a {
   text-align: center;
   padding: 6rem 0;
   color: var(--dark);
+  position: relative;
+}
+.destinations::after,
+.destinations::before {
+  content: "";
+  position: absolute;
+  width: 60rem;
+  height: 60rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.destinations::before {
+  background-image: url("./../public/svgs/shape2.svg");
+  left: -45rem;
+  bottom: 40rem;
+}
+.destinations::after {
+  background-image: url("./../public/svgs/shape1.svg");
+  right: -45rem;
+  top: -10rem;
 }
 .destinations__logo {
   width: 8rem;
@@ -414,6 +437,25 @@ a {
   display: flex;
   flex-direction: column-reverse;
   margin: 6rem 0;
+  position: relative;
+  overflow: hidden;
+}
+.newsletter::before {
+  content: "";
+  position: absolute;
+  top: 0rem;
+  bottom: 0;
+  left: 0rem;
+  right: 0;
+  background-image: url("./../public/svgs/shape3.svg");
+  background-repeat: no-repeat;
+  width: 50rem;
+  height: 50rem;
+  background-size: contain;
+}
+.newsletter__content,
+.newsletter__banner {
+  z-index: 2;
 }
 .newsletter__form {
   height: 100%;
@@ -463,6 +505,7 @@ a {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  box-shadow: 0 0 1rem var(--orange)
 }
 
 .newsletter__img {
