@@ -4,6 +4,7 @@
   --grey: #d2d2d2;
   --dark: #3b3735;
   --pink: #faf4f2;
+  --secondary-color: #f8e1db;
 }
 
 html {
@@ -301,6 +302,7 @@ a {
 .destinations {
   text-align: center;
   padding: 6rem 0;
+  color: var(--dark);
 }
 .destinations__logo {
   width: 8rem;
@@ -359,12 +361,11 @@ a {
 
 .place__like-icon--fill {
   fill: var(--orange);
-
 }
 .place__price {
   background-color: var(--white);
   position: absolute;
-  bottom: -.7rem;
+  bottom: -0.7rem;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -380,7 +381,7 @@ a {
 .place__title {
   font-family: "Archivo";
   margin-top: 3rem;
-  margin-bottom: .5rem ;
+  margin-bottom: 0.5rem;
   font-size: 1.8rem;
 }
 .place__caption {
@@ -400,4 +401,71 @@ a {
 .destinations__btn:hover {
   color: var(--pink);
   background-color: var(--orange);
+}
+
+/* newsletter */
+
+.newsletter {
+  background-color: var(--secondary-color);
+  border-radius: 2rem;
+  color: var(--dark);
+  text-align: center;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.newsletter__form {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  
+}
+.newsletter__content {
+}
+.newsletter__title {
+  font-family: "Archivo";
+  font-size: 3rem;
+  margin: 2rem auto;
+}
+.newsletter__caption {
+  font-family: "Roboto-Medium";
+}
+.newsletter__email-box {
+  position: relative;
+  height: 8rem;
+  padding: 0 1.5rem;
+  background-color: var(--white);
+  border-radius: 2rem;
+  margin-top: 2rem;
+}
+.newsletter__email-icon {
+  flex-shrink: 0;
+}
+.newsletter__input {
+  outline: none;
+  border: none;
+  height: 100%;
+  color: #8d8d8d;
+  width: 100%;
+  padding: 0 1rem;
+  background-color: var(--white);
+  font-size: 1.6rem;
+}
+.newsletter__submit {
+  outline: none;
+  border: none;
+  background-color: var(--orange);
+  width: 5rem;
+  height: 5rem;
+  border-radius: 2rem;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.newsletter__banner {
+}
+.newsletter__img {
+  width: 100%;
 }
