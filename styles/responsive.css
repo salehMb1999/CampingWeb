@@ -22,6 +22,17 @@
     .menu {
         display: flex;
     }
+    .newsletter {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .newsletter__content {
+        flex-basis: 45%;
+    }
+    .newsletter__banner {
+        flex-basis: 40%;
+    }
     
 }
 @media screen and (min-width: 992px) {
@@ -33,6 +44,10 @@
     }
 }
 @media screen and (min-width: 1200px) {
+    .newsletter {
+  padding: 3rem 6rem;
+
+    }
 }
 @media screen and (min-width: 1400px) {
 }
