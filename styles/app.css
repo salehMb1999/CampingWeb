@@ -259,8 +259,7 @@ a {
 }
 
 /* Main */
-.main {
-}
+
 /* Services */
 
 .services {
@@ -419,10 +418,8 @@ a {
   height: 100%;
   display: flex;
   align-items: center;
-  
 }
-.newsletter__content {
-}
+
 .newsletter__title {
   font-family: "Archivo";
   font-size: 3rem;
@@ -466,8 +463,10 @@ a {
   align-items: center;
   cursor: pointer;
 }
-.newsletter__banner {
-}
+
 .newsletter__img {
   width: 100%;
 }
+
+
+/* footer */
