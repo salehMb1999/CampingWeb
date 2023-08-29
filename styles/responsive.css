@@ -8,6 +8,16 @@
   .newsletter__title {
     max-width: 16rem;
   }
+  .footer {
+    text-align: center;
+  }
+  .footer-list {
+    margin-left: 0;
+    width: 100%;
+  }
+  .footer__right {
+    justify-content: center;
+  }
 }
 
 @media screen and (min-width: 576px) {
@@ -40,6 +50,23 @@
   }
   .header-content__caption {
     max-width: 50rem;
+  }
+  .footer-app {
+    display: block;
+  }
+  .footer-app--mobile {
+    display: none;
+  }
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__scroll {
+    left: auto;
+    margin: 0 auto;
+  }
+  .footer-list {
+    margin-left: 2rem;
   }
 }
 @media screen and (min-width: 1200px) {

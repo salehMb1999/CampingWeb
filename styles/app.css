@@ -483,10 +483,6 @@ a {
   font-size: 1.8rem;
   margin-bottom: 1rem;
 }
-.footer__wrapper {
-  display: flex;
-  justify-content: space-between;
-}
 .footer__left {
   max-width: 60rem;
 }
@@ -496,17 +492,24 @@ a {
 .footer-content__description {
 }
 .footer-app {
+  display: none;
+}
+.footer-app--mobile {
+  display: block;
 }
 .footer__right {
   display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
 }
 .footer-app__link {
 }
 .footer-app__img {
 }
 .footer-list {
-  width: 18rem;
+  width: 16rem;
   margin-left: 1rem;
+  margin-bottom: 1rem;
 }
 .footer-pages {
 }
@@ -535,4 +538,6 @@ a {
   position: absolute;
   right: 0;
   top: -12.5rem;
+  left: 0;
+  margin: 0 auto;
 }
