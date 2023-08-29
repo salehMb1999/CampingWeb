@@ -1,53 +1,51 @@
 @media (max-width: 380px) {
-    .header-content__title {
-        font-size: 4rem;
-    }
-    .destinations__title {
-        font-size: 2.4rem;
-    }
-    .newsletter__title {
-        max-width: 16rem;
-    }
+  .header-content__title {
+    font-size: 4rem;
+  }
+  .destinations__title {
+    font-size: 2.4rem;
+  }
+  .newsletter__title {
+    max-width: 16rem;
+  }
 }
 
 @media screen and (min-width: 576px) {
 }
 @media screen and (min-width: 768px) {
-    .nav__btn {
-        display: none;
-    }
-    .nav-menu {
-        display: none;
-    }
-    .menu {
-        display: flex;
-    }
-    .newsletter {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .newsletter__content {
-        flex-basis: 45%;
-    }
-    .newsletter__banner {
-        flex-basis: 40%;
-    }
-    
+  .nav__btn {
+    display: none;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .menu {
+    display: flex;
+  }
+  .newsletter {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .newsletter__content {
+    flex-basis: 45%;
+  }
+  .newsletter__banner {
+    flex-basis: 40%;
+  }
 }
 @media screen and (min-width: 992px) {
-    .nav__links {
-        display: block;
-    }
-    .header-content__caption {
-        max-width: 50rem;
-    }
+  .nav__links {
+    display: block;
+  }
+  .header-content__caption {
+    max-width: 50rem;
+  }
 }
 @media screen and (min-width: 1200px) {
-    .newsletter {
-  padding: 3rem 6rem;
-
-    }
+  .newsletter {
+    padding: 3rem 6rem;
+  }
 }
 @media screen and (min-width: 1400px) {
 }
