@@ -10,6 +10,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 *,
 *::after,
@@ -468,5 +469,70 @@ a {
   width: 100%;
 }
 
-
 /* footer */
+
+.footer {
+  background-color: var(--secondary-color);
+  border-top-left-radius: 10rem;
+  border-top-right-radius: 10rem;
+  color: var(--dark);
+  padding: 10rem 0 6rem 0;
+}
+.footer__title {
+  font-family: "Archivo";
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__left {
+  max-width: 60rem;
+}
+.footer-content {
+  margin-bottom: 2rem;
+}
+.footer-content__description {
+}
+.footer-app {
+}
+.footer__right {
+  display: flex;
+}
+.footer-app__link {
+}
+.footer-app__img {
+}
+.footer-list {
+  width: 18rem;
+  margin-left: 1rem;
+}
+.footer-pages {
+}
+.footer-pages__item {
+}
+.footer-pages__link {
+  color: var(--dark);
+  transition: all 0.2s ease-in-out;
+}
+.footer-pages__link:hover {
+  text-decoration: underline;
+}
+.footer__copy-right {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-top: 2rem;
+}
+.footer__scroll {
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  background-color: var(--white);
+  position: absolute;
+  right: 0;
+  top: -12.5rem;
+}

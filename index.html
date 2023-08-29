@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="styles/responsive.css" />
   </head>
   <body>
-    <header class="header">
+    <header id="header" class="header">
       <div class="container">
         <nav class="nav">
           <div class="nav__wrapper">
@@ -593,8 +593,24 @@
         </section>
       </div>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container">
+        <a href="#header" class="footer__scroll">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18.68"
+            height="22.175"
+            viewBox="0 0 18.68 22.175"
+          >
+            <path
+              id="Path_958"
+              data-name="Path 958"
+              d="M22.175,9.358a1.43,1.43,0,0,0-1.43-1.43H5.063l5.813-5.42A1.43,1.43,0,1,0,8.923.421L.455,8.311a1.43,1.43,0,0,0,0,2.091L8.923,18.3A1.43,1.43,0,1,0,10.875,16.2L5.063,10.788H20.746A1.43,1.43,0,0,0,22.175,9.358Z"
+              transform="translate(18.68) rotate(90)"
+              fill="#e76f51"
+            />
+          </svg>
+        </a>
         <div class="footer__wrapper">
           <div class="footer__left">
             <div class="footer-content">
@@ -689,6 +705,7 @@
             </div>
           </div>
         </div>
+        <p class="footer__copy-right">&copy 2023. All rights reserved.</p>
       </div>
     </footer>
     <script src="scripts/app.js"></script>
