@@ -185,7 +185,7 @@ a {
   color: var(--dark);
 }
 .nav__btn {
-  background-color: var(--white);
+  background-color: var(--orange);
   width: 5.5rem;
   height: 5.5rem;
   border-radius: 2rem;
@@ -201,7 +201,7 @@ a {
   width: 3rem;
   height: 0.3rem;
   border-radius: 2rem;
-  background-color: var(--orange);
+  background-color: var(--white);
   transition: all 250ms ease-in-out;
 }
 .nav__btn-line::before,
@@ -211,7 +211,7 @@ a {
   width: 3rem;
   height: 0.3rem;
   border-radius: 2rem;
-  background-color: var(--orange);
+  background-color: var(--white);
   transition: all 250ms ease-in-out;
 }
 .nav__btn-line::before {
@@ -263,9 +263,11 @@ a {
 /* Services */
 
 .services {
-  margin-top: -20rem;
+  margin-top: -12rem;
   display: flex;
   flex-wrap: wrap;
+  margin-left: -1rem;
+  margin-right: -1rem;
 }
 
 .service {
@@ -279,7 +281,7 @@ a {
   justify-content: center;
   align-items: center;
   margin-bottom: 2rem;
-  padding: 0 4rem;
+  padding: 0 2rem;
   color: var(--dark);
   flex-grow: 1;
   margin-right: 1rem;
@@ -296,5 +298,106 @@ a {
   margin: 1.5rem 0 0.8rem 0;
 }
 
-.service__caption {
+.destinations {
+  text-align: center;
+  padding: 6rem 0;
+}
+.destinations__logo {
+  width: 8rem;
+  height: 8rem;
+}
+
+.destinations__title {
+  font-family: "Archivo";
+  font-size: 3rem;
+  max-width: 36rem;
+  margin: 3rem auto;
+}
+
+.destinations__places {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+.place {
+  background-color: var(--white);
+  border-radius: 2rem;
+  padding: 2rem;
+  color: var(--dark);
+  margin-bottom: 2rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  width: 30rem;
+  flex-grow: 1;
+  overflow: hidden;
+}
+.place__banner {
+  position: relative;
+  border-radius: 2rem;
+  overflow: hidden;
+  height: 18rem;
+}
+.place__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.place__like {
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.place__like-icon--fill {
+  fill: var(--orange);
+
+}
+.place__price {
+  background-color: var(--white);
+  position: absolute;
+  bottom: -.7rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 12rem;
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+}
+.place__price-text {
+  font-family: "Roboto-Medium";
+  color: var(--orange);
+  text-align: center;
+}
+.place__title {
+  font-family: "Archivo";
+  margin-top: 3rem;
+  margin-bottom: .5rem ;
+  font-size: 1.8rem;
+}
+.place__caption {
+  margin-bottom: 3rem;
+}
+.place__link {
+  color: #8d8d8d;
+  background-color: rgba(141, 141, 141, 0.1);
+}
+.destinations__btn {
+  color: var(--orange);
+  border: 1px solid var(--orange);
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+  margin-top: 3rem;
+}
+.destinations__btn:hover {
+  color: var(--pink);
+  background-color: var(--orange);
 }
